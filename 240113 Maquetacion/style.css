@@ -1,0 +1,112 @@
+@import url(https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css);
+
+* {
+  margin: 0;
+  text-decoration: none;
+}
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  background: linear-gradient(
+    0deg,
+    rgba(163, 34, 195, 0.8715861344537815) 0%,
+    rgba(45, 224, 253, 0.8715861344537815) 100%
+  );
+}
+.circle {
+  border: none;
+  position: absolute;
+  display: flex;
+  border-radius: 50%;
+  border: nones;
+  background-color: #f9fcfd31;
+  box-shadow: 2px 2px 10px 8px rgba(128, 128, 128, 0.377) inset,
+    1px 10px 20px 10px rgba(0, 0, 0, 0.247);
+}
+.one {
+  top: 70%;
+  left: 20px;
+  width: 80px;
+  height: 80px;
+}
+
+.two {
+  top: 10%;
+  right: 38%;
+  width: 50px;
+  height: 50px;
+}
+
+.three {
+  top: -6%;
+  left: 64%;
+  width: 180px;
+  height: 180px;
+}
+.four {
+  top: 10%;
+  right: 70%;
+  width: 60px;
+  height: 60px;
+}
+
+.container {
+  margin: 0;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  position: relative;
+  border-radius: 20px;
+  width: 900px;
+  height: 480px;
+  background-color: #eeeeee59;
+  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.226);
+  z-index: 1;
+  grid-template-areas: "side contenido contenido contenido contenido ";
+  gap: 5px;
+}
+
+/*inicio de cuadricula*/
+.side {
+  width: 80%;
+  left: 20px;
+  height: 420px;
+  grid-area: side;
+  background-color: #eeeeee59;
+  border-radius: 10px;
+  box-shadow: 2px 2px 20px 0 rgba(0, 0, 0, 0.226);
+}
+
+h3 {
+  align-content: flex-start;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 100;
+  font-size: 30px;
+  color: black;
+}
+
+.side {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+}
+ul {
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  padding: 10px;
+}
+
+.contenido {
+  width: 90%;
+  height: 420px;
+  grid-area: contenido;
+  background-color: #eeeeee59;
+  border: 1px solid red;
+  border-radius: 10px;
+}

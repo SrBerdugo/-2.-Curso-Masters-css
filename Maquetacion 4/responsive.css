@@ -1,0 +1,46 @@
+@media (max-width: 1164px) {
+  #header {
+    display: grid;
+    grid-template-columns: 100%; /* solo 2 columna que ocupa  dele spacio*/
+    align-items: center;
+    justify-content: center;
+    height: 140px;
+    padding-bottom: 20px;
+  }
+
+  #header h1 {
+    text-align: center;
+  }
+
+  #contenido {
+    display: grid;
+    grid-template-columns: 1fr; /* dibide las regilla en 1 columna del 20% del espacio total  y al resto le mete 1 fraccion*/
+    align-items: start; /*esta propiedad alinea centrado*/
+    justify-content: space-between; /*esta propiedad le da espacio entre medio de las cajas*/
+    grid-column-gap: auto;
+  }
+
+  #proyectos {
+    display: grid;
+    grid-template-columns: 1fr; /* 4 columnasla medida de las columnas 250PX*/
+    grid-gap: 20px;
+  }
+
+  #columna-menu {
+    margin-right: 0px;
+    padding: 15px;
+  }
+
+  #columna-menu ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+
+  #footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 40px;
+    align-items: center;
+  }
+}

@@ -1,0 +1,53 @@
+#t1 {
+  text-align: center;
+  padding: 80px;
+}
+
+/*aqui se se edita la cajas*/
+
+#cajas {
+  max-width: 1080px;
+  border: 5px solid black;
+}
+
+.caja {
+  display: block;
+  color: white;
+  background-image: url(../Imagenes/patron1.jpg);
+  background-size: 100%;
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  border: 5px solid rgb(8, 226, 250);
+  padding: 10px;
+  float: left;
+}
+
+body {
+  padding: 80px;
+}
+
+/*caja para el texto*/
+.caja p {
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  text-align: justify;
+}
+
+p {
+  text-align: justify;
+  font-family: bold;
+}
+
+.caja b {
+  color: red;
+}
+p {
+  font-family: bold;
+  font-size: medium;
+}
+.clearbox {
+  float: none;
+  clear: both;
+}

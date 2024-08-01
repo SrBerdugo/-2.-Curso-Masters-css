@@ -1,0 +1,135 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+input {
+  display: none;
+}
+.slider {
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+.center {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
+  box-shadow: 10px 10px 50px 5px black;
+  border-radius: 30px;
+}
+.slides {
+  position: relative;
+  height: 400px;
+  width: 2000px;
+  transition: 0.7s all ease;
+}
+
+.slide {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  display: grid;
+  place-items: center;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 5rem;
+  border-radius: 30px;
+}
+
+.slide:nth-child(1) {
+  background: linear-gradient(
+    90deg,
+    rgb(16, 4, 243) 0%,
+    rgb(2, 2, 82) 0%,
+    rgb(255, 196, 0) 100%
+  );
+  transform: translateX(-800px);
+}
+.slide:nth-child(2) {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  transform: translateX(-400px);
+}
+.slide:nth-child(3) {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgb(1, 1, 29) 0%,
+    rgb(0, 235, 31) 100%
+  );
+}
+.slide:nth-child(4) {
+  background: linear-gradient(
+    90deg,
+    rgb(253, 2, 2) 0%,
+    rgb(247, 168, 0) 0%,
+    rgb(6, 253, 109) 100%
+  );
+  transform: translateX(400px);
+}
+.slide:nth-child(5) {
+  background: radial-gradient(
+    circle,
+    rgba(243, 6, 6, 0.89) 0%,
+    rgb(70, 222, 0) 100%
+  );
+  transform: translateX(800px);
+}
+
+.controls {
+  margin-top: -40px;
+  height: 30px;
+  width: 175px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+}
+.check {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 2px solid white;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.39);
+  cursor: pointer;
+  transition: 0.2s;
+}
+/*hover de los puntos cuando pase sobre ellos*/
+.check:hover {
+  background-color: white;
+}
+
+/* animacion para desplazammiento de slider*/
+
+/* /* Estilos aplicados cuando #slider1 está marcado y 
+.one es un hermano posterior en el DOM */
+#slider1:checked ~ .controls .one {
+  background: black; /* no tiene FUNCION EL CHECKED*/
+}
+
+#slider1:checked ~ .center .slides {
+  transform: translateX(800px);
+}
+#slider2:checked ~ .center .slides {
+  transform: translateX(400px);
+}
+#slider3:checked ~ .center .slides {
+  transform: translateX(0px);
+}
+#slider4:checked ~ .center .slides {
+  transform: translateX(-400px);
+}
+#slider5:checked ~ .center .slides {
+  transform: translateX(-800px);
+}

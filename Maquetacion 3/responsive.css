@@ -1,0 +1,39 @@
+@media (max-width: 751px) {
+  #contenido {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #header {
+    text-align: center;
+  }
+  #menu {
+    margin: none;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  #footer .info {
+    margin-right: 5px;
+    flex-basis: 100%;
+    flex-grow: 1;
+    order: 2;
+    text-align: center;
+  }
+}
+footer .logo {
+  flex-basis: 100%;
+  flex-grow: 1;
+  order: 1;
+  text-align: center;
+}
+
+menu h2 {
+  font-size: 16px;
+  padding-bottom: 40px;
+}

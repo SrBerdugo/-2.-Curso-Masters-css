@@ -1,0 +1,98 @@
+:root {
+  --color-green: #008834;
+  --color-red: #fa1010;
+  --color-button: #fdffff;
+  --color-black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-black);
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  margin-top: 100px;
+  width: 500px;
+  height: 400px;
+}
+
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 40px;
+  display: inline-block;
+  text-align: center;
+  width: 500px;
+  height: 50px;
+  color: var(--color-button);
+}
+
+/*caja de Botones*/
+.box-button {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 500px;
+  height: 300px;
+}
+
+/* quitamos las decoraciones a las lista*/
+ul {
+  list-style-type: none;
+  display: inline-block;
+}
+
+li {
+  margin: 20px;
+  font-family: cursive;
+  font-size: 20px;
+}
+
+.swich_box {
+  display: flex;
+  align-items: center;
+  color: var(--color-button);
+}
+
+.swich_button {
+  display: none;
+}
+
+.swich_box .swich-button_label {
+  background-color: var(--color-red);
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.swich_box .swich-button_label:before {
+  transition: 0.2s;
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-button);
+  content: "";
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 2px 1px var(--color-black);
+}
+
+.swich_button:checked + .swich-button_label {
+  background-color: var(--color-green);
+}
+
+.swich_button:checked + .swich-button_label:before {
+  transform: translateX(40px);
+}

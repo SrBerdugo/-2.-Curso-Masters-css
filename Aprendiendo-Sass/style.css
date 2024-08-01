@@ -1,0 +1,38 @@
+body {
+  background-color: #ccc;
+}
+
+h1 {
+  color: blue;
+  font-family: helvetica, Arial;
+}
+
+p {
+  color: red;
+}
+
+.caja {
+  display: block;
+  text-align: center;
+  margin: 0px auto;
+  padding: 10px;
+  width: 500px;
+  border: 1px solid black;
+}
+.caja h2 {
+  color: blueviolet;
+  font-size: 20px;
+}
+.caja .informacion {
+  border: 1px solid black;
+  width: 100px;
+  height: auto;
+}
+
+.listado {
+  border: 10px solid red;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

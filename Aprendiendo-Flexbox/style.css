@@ -1,0 +1,108 @@
+/*INICIAERMOS CON LOS CONCEPTOS DE QUE ES FLEXBOS Y PAR QUE SIRVE EN EL MMEDIO DE CSS DAREMOIS ESTILOS
+A ESTE INICIO  PARA DAR EJEMOPLOS Y CONCCEPTOS DE ESTA TECNOLO
+    hay que tener en cuenta que con flexbox todo se debe tener en un mismo contenedor sea un DIV o lo que sea
+    
+*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.layout {
+  display: flex;
+  /*display:inline-flex;*/ /* hac la ubicacion sea linal*/
+  justify-content: space-around
+    /*La propiedad "justify-content" se aplica al eje principal y se utiliza para distribuir los
+  ALILEACION HORIZONTAL                                elementos a lo largo de ese eje principal. Puede tener varios valores, como:*/;
+  /*flex-direction: row;*/ /* <----- ESTA PROPIEDAD  DIRECCIONA AL CONTENEDOR VERTICA O HORIZONTAL*/
+  /*flex-wrap: wrap;*/ /* <---- ESTA  LO QUE REALIZA ES QUE EL CONTENIDO NON 
+                          SE SALGA CON LAS CAJAS EXCENTE EL ANCHO DEL CONTENEDOR*/
+  /*flex-flow: row wrap;/* /* CON ESNO AHORAMOS LAS LINEAS DE ARRIBA  UNE AMBOS EN UNA SOLA LINEA*/
+  border: 5px solid black;
+  padding: 5px;
+}
+.caja {
+  /*flex-grow: 1;*/ /* esta propiedad hace que la caja se flexible y ase adante las demas cajas
+                    si se la agregro a la demas cajas lo que hace el valor es darle prioridad a ala que tengas mayor valor dentro del contenedor*/
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+  border: 4px solid #222;
+  margin: 10px;
+  background: grey;
+}
+
+/*CLASE ORDER Se utiliza para darle un orden a ala caja o organizarlas de la forma que tu quieras*/
+.azul {
+  /*order: 2;*/
+  /*flex-basis: 20%;  <-- establece un ancho minimo quedebe tener lña caja */
+
+  background: blue;
+}
+.roja {
+  background: red;
+}
+.naranja {
+  background: orange;
+}
+.megra {
+  background: black;
+}
+
+/*body {
+  background: rgb(0, 0, 0);
+}
+.titulo h1 {
+  color: red;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 80px;
+  text-align: center;
+}
+#login h2 {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  text-shadow: 2px 1px 0px black;
+}
+#login {
+  display: block;
+  border: 1px solid black;
+  width: 400px;
+  height: 380px;
+  margin: auto;
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+}
+#login label {
+  display: block;
+  font-size: 20px;
+  text-shadow: 1px 0px 0px black;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 20px;
+  margin-left: 50px;
+  margin: none;
+  letter-spacing: 1px;
+}
+#login input {
+  display: block;
+  height: 40px;
+  width: 250px;
+  margin-left: 50px;
+  border: 2px solid grey;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+#LOGIN button {
+  width: 80px;
+  display: block;
+  padding: 10px;
+  margin: auto;
+  margin-top: 20px;
+  background: green;
+  border-radius: 5px;
+  color: white;
+  text-shadow: 1px 0px 0px black, 2px 0px 0ox black;
+  box-shadow: 1px 0px 0px 0px black;
+}*/

@@ -1,0 +1,55 @@
+// ---<<VARIABLES>>--
+$fuentes-tipicas: helvetica, Arial;
+$color-fonndo: #ccc;
+$color-parrafos: red;
+$color-titulos: blue;
+
+//----> USO DE VARIABLES <-<-
+body {
+  background-color: $color-fonndo;
+}
+h1 {
+  color: $color-titulos;
+  font-family: $fuentes-tipicas;
+}
+
+p {
+  color: $color-parrafos;
+}
+
+.caja {
+  display: block;
+  text-align: center;
+  margin: 0px auto;
+  padding: 10px;
+  width: 500px;
+  border: 1px solid black;
+  h2 {
+    color: blueviolet;
+    font-size: 20px;
+  }
+  + .informacion {
+    border: 1px solid black;
+    width: 100px;
+    height: auto;
+  }
+}
+// ------> MIXINS / FUNCIONES <-------
+// aca damos los parametros al mixi para luego llamarlo, dentro delos parenteisis
+//podemos determinar los parametro que desamos tener en cuenta , TAMAÑO,COLOR,ETC
+@mixin crearborders($color, $size, $shadow) {
+  // <------ estos son las variable que se aplican
+  border: $size solid $color;
+  border-radius: $size;
+  box-shadow: 0px 0px $size;
+}
+//aplicacion del MIXIN
+// solo utlizamos los parametro y asi puedo solo darle
+//cualquier parametro teneiendo en cuenta a que le colocamos
+.listado {
+  @include crearborders(
+    red,
+    10px,
+    2px
+  ); //<--------- aqui se visualiza el ejemplo
+}

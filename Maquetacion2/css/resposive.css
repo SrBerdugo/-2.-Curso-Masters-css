@@ -1,0 +1,19 @@
+/* responsive de Tarjetas*/
+
+@media (max-width: 1250px) {
+  .wrap {
+    width: 90%;
+    margin: 0px auto;
+  }
+  .card {
+    width: 17%;
+    margin: 1.45%;
+  }
+  #articles {
+    width: 65%;
+  }
+
+  #articles article {
+    width: 97%;
+  }
+}

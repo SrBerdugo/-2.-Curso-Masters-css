@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+.general {
+  width: 1200px;
+  margin: 0px auto;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#cabezera {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  color: white;
+  background-color: rgb(4, 81, 224);
+  text-decoration: solid;
+  line-height: 90px;
+  text-transform: uppercase;
+}
+
+#menu {
+  background-color: #eeee;
+}
+
+.clearfix {
+  float: none;
+  clear: both;
+}
+
+#menu ul li {
+  display: block;
+  float: left;
+  border-right: 1px solid #ccc;
+}
+
+#menu ul li a {
+  display: block;
+  color: #444;
+  padding: 15px;
+}
+
+#menu ul li :hover {
+  background-color: rgb(4, 81, 224);
+}
+#menu ul li:hover a {
+  color: white;
+}
+
+.contenido {
+  width: 69%;
+  border: solid 1px green;
+  float: left;
+}
+
+/* este es lateral*/
+#lateral {
+  width: 30%;
+  border: solid 2px rgb(0, 0, 0);
+  float: left;
+  padding: 2px;
+  text-align: justify;
+  min-height: 1940px;
+}
+
+.contenido .caja {
+  background-color: green;
+  width: 40%;
+  height: 200px;
+  border: solid 5px red;
+  float: left;
+  margin: 30px;
+  text-align: center;
+}
+
+.contenido .caja {
+  color: white;
+  padding-top: 160px;
+  text-transform: uppercase;
+}
+
+#subt1 {
+  color: red;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+#text1 {
+  padding-top: 20px;
+  padding: 10px;
+  text-align: justify;
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: blue;
+  color: white;
+  line-height: 20px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+footer p a {
+  color: red;
+  text-transform: uppercase;
+}

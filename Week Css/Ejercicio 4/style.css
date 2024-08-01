@@ -1,0 +1,190 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background: black;
+}
+
+.container {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  display: grid;
+  place-items: center;
+}
+
+.fondovideo {
+  top: 21%;
+  position: absolute;
+  width: 380px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center center;
+  z-index: -10;
+  border: 8px solid rgba(0, 0, 0, 0.123);
+  box-shadow: 0px 0px 20px 1px rgb(226, 226, 226);
+  border-radius: 10px;
+}
+
+/*PARASOL*/
+.parasol {
+  position: relative;
+  transform-style: preserve-3d;
+  transform: rotateX(90deg);
+  width: 400px;
+  height: 200px;
+  top: -50%;
+}
+.top {
+  width: 400px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: rotate 8s linear infinite;
+  box-shadow: 2px 0px 2px 10px black;
+}
+
+.trinagle {
+  position: absolute;
+  border-style: solid;
+  border-width: 0 110px 199px 110px;
+  border-color: transparent transparent white transparent;
+  transform-origin: 50% 0;
+  left: 22.2%;
+  top: 50%;
+}
+
+.triangle-1 {
+  transform: rotateZ(0deg) rotateX(-24deg);
+  border-color: transparent transparent #0f0688 transparent;
+}
+.triangle-2 {
+  transform: rotateZ(30deg) rotateX(-24deg);
+}
+.triangle-3 {
+  transform: rotateZ(60deg) rotateX(-24deg);
+  border-color: transparent transparent #0f0688 transparent;
+}
+.triangle-4 {
+  transform: rotateZ(90deg) rotateX(-24deg);
+}
+
+.triangle-5 {
+  transform: rotateZ(120deg) rotateX(-24deg);
+  border-color: transparent transparent #0f0688 transparent;
+}
+.triangle-6 {
+  transform: rotateZ(150deg) rotateX(-24deg);
+}
+
+.triangle-7 {
+  transform: rotateZ(180deg) rotateX(-24deg);
+  border-color: transparent transparent #0f0688 transparent;
+}
+
+.triangle-8 {
+  transform: rotateZ(210deg) rotateX(-24deg);
+}
+
+.triangle-9 {
+  transform: rotateZ(240deg) rotateX(-24deg);
+  border-color: transparent transparent #0f0688 transparent;
+}
+.triangle-10 {
+  transform: rotateZ(270deg) rotateX(-24deg);
+}
+
+.triangle-11 {
+  transform: rotateZ(300deg) rotateX(-24deg);
+  border-color: transparent transparent #0f0688 transparent;
+}
+.triangle-12 {
+  transform: rotateZ(330deg) rotateX(-24deg);
+}
+
+/*Animacion*/
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(-360deg);
+  }
+}
+
+/*PARASOL*/
+
+/*POLE O PALO DEL PARASOL*/
+.pole {
+  position: absolute;
+  width: 30px;
+  height: 300px;
+  background: linear-gradient(
+    90deg,
+    rgb(83, 83, 83) 6%,
+    rgba(242, 242, 242, 1) 49%,
+    rgb(119, 118, 118) 100%
+  );
+  border-radius: 40px 40px 0 0, 40% 40% 30% 30%;
+
+  z-index: -5;
+}
+/*POLE O PALO DEL PARASOL---------------------*/
+
+/*contendeor de carrucel*/
+.containerCarrrusel {
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  display: grid;
+  place-items: center;
+}
+.horse {
+  height: 280px;
+  top: 18%;
+  aspect-ratio: 1/1;
+  background-image: url(horse2.png);
+  position: absolute;
+  background-size: cover;
+  animation: carrusel 8s linear infinite;
+}
+/*Animacion*/
+@keyframes carrusel {
+  from {
+    transform: rotateY(360deg) translateZ(-150px);
+    z-index: 10;
+  }
+  50% {
+    z-index: -10;
+  }
+  to {
+    transform: rotateX(0deg) translateZ(-150px);
+    z-index: 10;
+  }
+}
+
+#horse1 {
+  animation-delay: 0s;
+}
+#horse2 {
+  animation-delay: 2s;
+}
+#horse3 {
+  animation-delay: 4s;
+}
+#horse4 {
+  animation-delay: 6s;
+}
+/*contendeor de carrucel*/
+
+/*PISO DEL CARRUCEL*/
+.floor {
+  position: absolute;
+  width: 400px;
+  height: 40px;
+  bottom: 0;
+  background-color: #0f0688;
+  border-radius: 5px 5px 50px 50px;
+  box-shadow: 0px 5px 30px 0px black, 0px 0px 0px 0px #0f0688;
+  border-bottom: 10px solid rgba(0, 0, 0, 0.795);
+}
+/*PISO DEL CARRUCEL*/

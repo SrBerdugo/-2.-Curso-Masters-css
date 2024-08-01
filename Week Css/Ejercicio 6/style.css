@@ -1,0 +1,103 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.container {
+  position: relative;
+  height: 400px;
+  width: 400px;
+  background-color: rgb(75, 75, 75);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  box-shadow: 10px 20px 10px black;
+  border-radius: 5px;
+}
+input {
+  display: none;
+}
+
+.bottons {
+  height: 80%;
+  width: 60%;
+  background-color: gray;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.397);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.boxexample {
+  position: absolute;
+  height: 40%;
+  width: 40%;
+  background-color: gray;
+  border-radius: 20px;
+  transform: translateX(110%);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.164);
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.select {
+  position: relative;
+  width: 50%;
+  height: 10%;
+  background-color: rgb(54, 54, 54);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.178) inset;
+  margin: 30px;
+  border-radius: 30px;
+}
+
+.select::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  border-radius: 50%;
+  background-color: rgb(7, 7, 7);
+  transition: 0.3s ease-in-out;
+  box-shadow: 4px 4px 3px rgba(252, 252, 252, 0.493) inset;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+#red:checked + .select::after,
+#blue:checked + .select::after,
+#yellow:checked + .select::after {
+  transform: translateX(100%);
+}
+
+.red:hover::after {
+  background-color: red;
+  box-shadow: 4px 4px 3px rgb(0, 0, 0) inset;
+  border: 1px solid rgba(0, 0, 0, 0.815);
+}
+.blue:hover::after {
+  background-color: blue;
+  box-shadow: 4px 4px 3px rgb(0, 0, 0) inset;
+  border: 1px solid black;
+}
+.yellow:hover::after {
+  background-color: rgb(219, 219, 4);
+  box-shadow: 4px 4px 3px rgb(0, 0, 0) inset;
+  border: 1px solid black;
+}
+
+#red:checked ~ .boxexample {
+  border-radius: 50%;
+  background-color: red;
+  box-shadow: 10px 4px 3px rgb(0, 0, 0) inset, 4px 5px 2px black;
+}
+#blue:checked ~ .boxexample {
+  border-radius: 84% 16% 41% 59% / 66% 57% 43% 34%;
+  background-color: blue;
+  box-shadow: 10px 4px 3px rgb(0, 0, 0) inset, 4px 5px 2px black;
+}
+#yellow:checked ~ .boxexample {
+  border-radius: 56% 44% 30% 70% / 0% 57% 43% 100%;
+  background-color: yellow;
+  box-shadow: 10px 4px 3px rgb(0, 0, 0) inset, 4px 5px 2px black;
+}

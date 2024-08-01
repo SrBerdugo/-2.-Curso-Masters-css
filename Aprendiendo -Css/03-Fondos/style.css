@@ -1,0 +1,17 @@
+body{
+    background-color: #ccc;
+    background-image: url(../Imagenes/patron1.jpg);
+    background-size: 100%;
+
+}
+ #caja{
+    border: 5px solid #2D8DB5; 
+    background-color : rgb(2, 176, 207);   
+    color: white;
+ }
+
+ h2{
+    color: white;
+ }
+
+ #parrafo{ color: whitesmoke;}
