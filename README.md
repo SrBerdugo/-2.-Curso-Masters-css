@@ -1,4 +1,4 @@
 # 2.-Curso-Masters-css
 Archivos del curso de master en CSS
-![Master en Css]([URL_de_la_imagen](https://github.com/SrBerdugo/-2.-Curso-Masters-css/blob/main/css-3.svg))
+![CSS](https://github.com/user-attachments/assets/4a9b09c0-87a7-45e6-9afd-ce665c5b1a02)
 
